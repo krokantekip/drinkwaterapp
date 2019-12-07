@@ -32,74 +32,10 @@
   </script>
 </head>
 <body>
-    <ons-page>
-        <ons-list>
-          <ons-list-item tappable>
-            <label class="left">
-              <ons-checkbox input-id="check-1"></ons-checkbox>
-            </label>
-            <label for="check-1" class="center">
-              Glas 1
-            </label>
-          </ons-list-item>
-          <ons-list-item tappable>
-            <label class="left">
-              <ons-checkbox input-id="check-2"></ons-checkbox>
-            </label>
-            <label for="check-2" class="center">
-              Glas 2
-            </label>
-          </ons-list-item>
-          <ons-list-item tappable>
-            <label class="left">
-              <ons-checkbox input-id="check-1"></ons-checkbox>
-            </label>
-            <label for="check-1" class="center">
-              Glas 3
-            </label>
-          </ons-list-item>
-          <ons-list-item tappable>
-            <label class="left">
-              <ons-checkbox input-id="check-1"></ons-checkbox>
-            </label>
-            <label for="check-1" class="center">
-              Glas 4
-            </label>
-          </ons-list-item>
-          <ons-list-item tappable>
-            <label class="left">
-              <ons-checkbox input-id="check-1"></ons-checkbox>
-            </label>
-            <label for="check-1" class="center">
-              Glas 5
-            </label>
-          </ons-list-item>
-          <ons-list-item tappable>
-            <label class="left">
-              <ons-checkbox input-id="check-1"></ons-checkbox>
-            </label>
-            <label for="check-1" class="center">
-              Glas 6
-            </label>
-          </ons-list-item>
-          <ons-list-item tappable>
-            <label class="left">
-              <ons-checkbox input-id="check-1"></ons-checkbox>
-            </label>
-            <label for="check-1" class="center">
-              Glas 7
-            </label>
-          </ons-list-item>
-          <ons-list-item tappable>
-            <label class="left">
-              <ons-checkbox input-id="check-1"></ons-checkbox>
-            </label>
-            <label for="check-1" class="center">
-              Glas 8
-            </label>
-          </ons-list-item>
-        </ons-list>
-      </ons-page>
+    document.addEventListener('prechange', function(event) {
+      document.querySelector('ons-toolbar .center')
+        .innerHTML = event.tabItem.getAttribute('label');
+    });
   PUT ANY CODE HERE. okayokayfhdbjhcsvd
 
 </body>
